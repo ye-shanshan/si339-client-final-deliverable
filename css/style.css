@@ -1,0 +1,224 @@
+body {
+    background-color: rgb(234, 234, 234);
+}
+
+nav {
+    display: none;
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 215, 215);
+    list-style: none;
+    z-index: 100;
+}
+
+.summary {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1% 2% 1% 2%;
+    background-color: #ffadad;
+}
+
+@media (min-width: 400px) {
+    nav {
+        display: block;
+    }
+}
+
+nav a:link { 
+    text-decoration: none; 
+    color: black;
+} 
+
+nav a:visited { 
+    text-decoration: none; 
+    color: black;
+} 
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+nav ul li {
+    padding: 2%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1, h2 {
+    text-align: center;
+}
+
+header h2 {
+    font-size: large;
+    font-weight: normal;
+}
+
+#team-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#team-results table {
+    text-align: center;
+}
+
+#team-results table thead {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#team-results table tbody tr:nth-child(odd) {
+    background-color: #ffadad;
+    color: black;
+}
+#team-results table tbody tr:nth-child(even) {
+    background-color: rgb(234, 234, 234);
+    color: black;
+}
+
+#individual-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#athlete-results {
+    display: grid;
+    grid-gap: 15px;
+    padding-bottom: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+}
+
+#individual-results .athlete {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 165, 165);
+    border-radius: 5%;
+    box-sizing: border-box;
+    transition: 0.15s;
+}
+
+#individual-results .athlete:hover {
+    transform: scale(1.15);
+}
+
+
+@media (prefers-reduced-motion) {
+    #athlete-results > *:nth-child(-n+3) {
+      animation: none;
+    }
+}
+
+
+#individual-results .athlete figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#individual-results .athlete dl {
+    display: grid;
+    grid-template-columns: auto auto; 
+    column-gap: 10px;
+    row-gap: 10px; 
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#individual-results .athlete dt, dd {
+    margin: 0;
+    padding: 10px;
+}
+
+#individual-results .athlete dt {
+    font-weight: bold;
+}
+
+#individual-results .athlete dd {
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 215, 215);
+    color: black;
+}
+
+footer a:link { 
+    text-decoration: none; 
+    color: black;
+} 
+
+footer a:visited { 
+    text-decoration: none; 
+    color: black;
+} 
+
+#index table {
+    border: none;
+}
+
+#index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#index tr:nth-child(odd) {
+    background-color: rgb(255, 215, 215);
+}
+#index tr:nth-child(even) {
+    background-color: rgb(234, 234, 234);
+}
+
+#index a:link { 
+    text-decoration: none; 
+    color: black;
+} 
+
+#index a:visited { 
+    text-decoration: none; 
+    color: black;
+}
+
+.dark-mode {
+    background-color: #520000;
+    color: white;
+}
+
+.high-contrast {
+    background-color: white;
+    color: black;
+}
+
+h1, body a:link { 
+    text-decoration: underline;
+    color: black;
+} 
+
+h1, body a:visited { 
+    text-decoration: underline;
+    color: black;
+}
