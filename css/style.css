@@ -120,8 +120,8 @@ header h2 {
 
 
 @media (prefers-reduced-motion) {
-    #athlete-results > *:nth-child(-n+3) {
-      animation: none;
+    #individual-results .athlete {
+      transition: none;
     }
 }
 
