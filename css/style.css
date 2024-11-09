@@ -203,16 +203,6 @@ footer a:visited {
     color: black;
 }
 
-.dark-mode {
-    background-color: #520000;
-    color: white;
-}
-
-.high-contrast {
-    background-color: white;
-    color: black;
-}
-
 h1, body a:link { 
     text-decoration: underline;
     color: black;
@@ -220,5 +210,38 @@ h1, body a:link {
 
 h1, body a:visited { 
     text-decoration: underline;
+    color: black;
+}
+
+.dark-mode {
+    background-color: #520000;
+    color: white;
+}
+
+.dark-mode header a:link,
+.dark-mode header a:visited,
+.dark-mode header h1 {
+    text-decoration: underline;
+    color: white; 
+}
+
+.dark-mode nav {
+    background-color: #ffadad;
+}
+
+.dark-mode nav a {
+    color: black;
+}
+
+.dark-mode #summary {
+    color: black;
+}
+
+.dark-mode #athlete-results {
+    color: black;
+}
+
+.high-contrast {
+    background-color: white;
     color: black;
 }
